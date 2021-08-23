@@ -217,5 +217,26 @@
          x="268.60587"
          id="tspan899"
          sodipodi:role="line">Abmelden</tspan></text>
+    <ellipse
+       ry="8.5526247"
+       rx="8.2853556"
+       cy="172.65611"
+       cx="285.17657"
+       id="path903"
+       style="fill:#00a8ff;fill-rule:evenodd;stroke-width:0.264583;fill-opacity:1" />
+    <ellipse
+       style="fill:#00a8ff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.264583"
+       id="ellipse905"
+       cx="285.17657"
+       cy="152.87817"
+       rx="8.2853556"
+       ry="8.5526247" />
+    <ellipse
+       ry="8.5526247"
+       rx="8.2853556"
+       cy="133.36749"
+       cx="285.17657"
+       id="ellipse907"
+       style="fill:#00a8ff;fill-opacity:1;fill-rule:evenodd;stroke-width:0.264583" />
   </g>
 </svg>
