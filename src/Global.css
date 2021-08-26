@@ -1,0 +1,24 @@
+:root {
+    /*Colors for the light mode*/
+    --light-bg-color: #f5f6fa;
+    --light-menu-color: #2f3640;
+    --light-text-color: #00a8ff;
+    --light-error-color: #e84118;
+
+    /*Colors for the dark mode*/
+    --dark-bg-color: #353b48;
+    --dark-menu-color: #40739e;
+    --dark-text-color: #f5f6fa;
+    --dark-error-color: #c23616;
+
+    /*Colors currently in use*/
+    --main-bg-color: var(--light-bg-color);
+    --main-menu-color: var(--light-menu-color);
+    --main-text-color: var(--light-text-color);
+    --main-error-color: var(--light-error-color);
+
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
