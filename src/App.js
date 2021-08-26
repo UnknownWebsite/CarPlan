@@ -6,6 +6,7 @@ import  {ThemeProvider} from 'styled-components';
 import { darkTheme, GlobalStyles, lightTheme } from './themes';
 import {useState} from "react"
 import { useStickyState } from './hooks/StickyState';
+import navbar from './components/CSS/navbar';
 
 
 
@@ -25,6 +26,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -35,6 +37,8 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+           
+          
         </a>
         <ToogleButton onChangeToActive={() => setDarkMode(true)} onChangeToInactive={() => setDarkMode(false)}></ToogleButton>
       </header>
