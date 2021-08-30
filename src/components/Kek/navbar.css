@@ -44,7 +44,7 @@ body {
 
 /* Right-aligned link */
 .navbar a.right {
-  float: right;
+  text-align: right;
 }
 
 /* Change color on hover */

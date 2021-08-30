@@ -18,7 +18,7 @@ function App() {
   const darkToggler = () => {
     darkMode === true ? setDarkMode(false) : setDarkMode(true);
   };
-const menuEntries = [{name:'home',link:"#"}, {name:'2',link:"#"}];
+const menuEntries = [{name:'Home',link:"#"}, {name:'Settings',link:"#"}];
   return (
     
     <ThemeProvider theme={darkMode === false ? lightTheme : darkTheme}>
