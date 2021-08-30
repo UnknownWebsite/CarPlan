@@ -2,8 +2,6 @@ import './navbar.css'
 
 function NavBar(props){
 
-  console.log(props.menuEntries);
-
   return(
     <div class="navbar">
     
