@@ -1,19 +1,20 @@
-export function NavBar(){
-  
-<head>
-  <link rel="stylesheet" href="navbar.css"></link>
-</head>
+import './navbar.css'
 
-return(
-<div class="navbar">
+function NavBar(props){
 
+  console.log(props.menuEntries);
 
-      <a href="" class="navbar.active">Home</a>
-      <a href="#">Link</a>
-      <a href="#">Link</a>
-      <a href="#" class="navbar.right">Hello Wardu</a>
-      
-    </div>
-)
-    }
-    export default NavBar
+  return(
+    <div class="navbar">
+    
+
+      {props.menuEntries.map(entry => (
+         <a href={entry.link} className="navbar a.active">{entry.name}</a>
+      ))}
+    
+          
+          
+        </div>
+    )
+}
+export default NavBar; 

@@ -6,7 +6,7 @@ import  {ThemeProvider} from 'styled-components';
 import { darkTheme, GlobalStyles, lightTheme } from './themes';
 import {useState} from "react"
 import { useStickyState } from './hooks/StickyState';
-import {NavBar} from './components/Kek/navbar.js';
+import NavBar from './components/Kek/navbar.js';
 
 
 
@@ -18,13 +18,13 @@ function App() {
   const darkToggler = () => {
     darkMode === true ? setDarkMode(false) : setDarkMode(true);
   };
-
+const menuEntries = [{name:'home',link:"#"}, {name:'2',link:"#"}];
   return (
     
     <ThemeProvider theme={darkMode === false ? lightTheme : darkTheme}>
       <GlobalStyles /> 
       
-      <NavBar />
+      <NavBar menuEntries={menuEntries}/>
       
     <div className="App">
       <header className="App-header">
