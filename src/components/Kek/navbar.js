@@ -11,8 +11,10 @@ function NavBar(props){
       ))}
     
           
-          
+  <a href='#' style = {{float:'right'}} className="navbar a.right">Abmelden</a>
         </div>
+
+        
     )
 }
 export default NavBar; 

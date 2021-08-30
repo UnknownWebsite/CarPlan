@@ -14,9 +14,8 @@ function ToogleButton(props){
     }
 
     return (
-        <div className="ToogleButton">
-            <button onClick={action}>
-            </button>
+        <div className="ToogleButton" onClick={action} >
+            
         </div>
     )
 }
