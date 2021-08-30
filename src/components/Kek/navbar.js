@@ -7,7 +7,7 @@ function NavBar(props){
     
 
       {props.menuEntries.map(entry => (
-         <a href={entry.link} className="navbar a.active">{entry.name}</a>
+         <a href={entry.link} className={entry.class}>{entry.name}</a>
       ))}
     
           
