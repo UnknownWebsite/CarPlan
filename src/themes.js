@@ -14,5 +14,6 @@ export const GlobalStyles = createGlobalStyle`:root{
         --main-text-color : var(--${(props) =>props.theme.name}-text-color);
         --main-menu-color : var(--${(props) =>props.theme.name}-menu-color);
         --main-error-color : var(--${(props) =>props.theme.name}-error-color);
+        --main-highlight-color : var(--${(props) =>props.theme.name}-highlight-color);
     }
 }`;

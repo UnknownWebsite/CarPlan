@@ -14,9 +14,11 @@ function ToggleButton(props){
     }
 
     return (
-        <div className="switch" onClick={action}>
-            <div className={isActive? "slider-on" : ""}/>
-            <span className="slider"></span>
+        <div className="margin">
+            <div className="switch" onClick={action}>
+                <div className={isActive? "slider-on" : ""}/>
+                <span className={"slider " + (props.round? "round" : "")}></span>
+            </div>
         </div>
     )
 }

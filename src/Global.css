@@ -4,18 +4,22 @@
     --light-menu-color: #2f3640;
     --light-text-color: #00a8ff;
     --light-error-color: #e84118;
+    --light-highlight-color: #353b48;
+
 
     /*Colors for the dark mode*/
     --dark-bg-color: #353b48;
     --dark-menu-color: #40739e;
     --dark-text-color: #f5f6fa;
     --dark-error-color: #c23616;
+    --dark-highlight-color: #487eb0;
 
     /*Colors currently in use*/
     --main-bg-color: var(--light-bg-color);
     --main-menu-color: var(--light-menu-color);
     --main-text-color: var(--light-text-color);
     --main-error-color: var(--light-error-color);
+    --main-highlight-color: var(--light-highlight-color);
 
 }
 
