@@ -1,8 +1,8 @@
 import {useState} from 'react'
-import './ToogleButton.css'
+import './ToggleButton.css'
 
-function ToogleButton(props){
-    const [isActive, setActive] = useState(false)
+function ToggleButton(props){
+    const [isActive, setActive] = useState(props.startState ? props.startState : false)
 
     function action() {
         setActive(!isActive);
@@ -14,13 +14,13 @@ function ToogleButton(props){
     }
 
     return (
-        <div className="ToogleButton">
-            <button onClick={action}>
-            </button>
+        <div className="switch" onClick={action}>
+            <div className={isActive? "slider-on" : ""}/>
+            <span className="slider"></span>
         </div>
     )
 }
 
 
 
-export default ToogleButton;
+export default ToggleButton;

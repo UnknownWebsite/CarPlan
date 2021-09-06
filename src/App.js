@@ -1,10 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import './Global.css';
-import ToogleButton from './components/ToggleButton';
+import ToggleButton from './components/ToggleButton';
 import  {ThemeProvider} from 'styled-components';
 import { darkTheme, GlobalStyles, lightTheme } from './themes';
-import {useState} from "react"
 import { useStickyState } from './hooks/StickyState';
 
 
@@ -14,10 +13,6 @@ import { useStickyState } from './hooks/StickyState';
 function App() {
   
   const [darkMode, setDarkMode]  = useStickyState(true);
-
-  const darkToggler = () => {
-    darkMode === true ? setDarkMode(false) : setDarkMode(true);
-  };
 
   return (
     <ThemeProvider theme={darkMode === false ? lightTheme : darkTheme}>
@@ -36,7 +31,7 @@ function App() {
         >
           Learn React
         </a>
-        <ToogleButton onChangeToActive={() => setDarkMode(true)} onChangeToInactive={() => setDarkMode(false)}></ToogleButton>
+        <ToggleButton onChangeToActive={() => setDarkMode(false)} onChangeToInactive={() => setDarkMode(true)} startState={darkMode}></ToggleButton>
       </header>
     </div>
     </ThemeProvider>

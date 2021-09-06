@@ -1,7 +1,0 @@
-.ToogleButton {
-    border-radius: 16px;
-    border-color: var(--main-menu-color);
-    border-style: solid;
-    width: 10vh;
-    background-color: var(--main-error-color);
-}
