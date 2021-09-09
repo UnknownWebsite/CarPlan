@@ -5,7 +5,8 @@
     --light-text-color: #00a8ff;
     --light-error-color: #e84118;
     --light-highlight-color: #353b48;
-
+    --light-disabled-color: #718093;
+    --light-disabled-2-color: #7f8fa6;
 
     /*Colors for the dark mode*/
     --dark-bg-color: #353b48;
@@ -13,6 +14,8 @@
     --dark-text-color: #f5f6fa;
     --dark-error-color: #c23616;
     --dark-highlight-color: #487eb0;
+    --dark-disabled-color: #718093;
+    --dark-disabled-2-color: #7f8fa6;
 
     /*Colors currently in use*/
     --main-bg-color: var(--light-bg-color);
@@ -20,6 +23,8 @@
     --main-text-color: var(--light-text-color);
     --main-error-color: var(--light-error-color);
     --main-highlight-color: var(--light-highlight-color);
+    --main-disabled-color: var(--light-disable-color);
+    --main-disabled-2-color: var(--light-disabled-2-color)
 
 }
 

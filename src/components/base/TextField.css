@@ -1,0 +1,9 @@
+/*TODO border*/
+.text-field{
+    border-color: var(--main-menu-color);
+    color: var(--main-text-color);
+}
+
+.text-field-disabled{
+    
+}
