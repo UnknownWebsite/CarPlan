@@ -11,7 +11,7 @@ const Home: NextPage = () => {
       <div>
         <p className={styles.test}>Test </p>
         <ToggleButton round onChangeToActive={() => console.log("On")} onChangeToInactive={() => console.log("off")} />
-        <TextField placeholder="Dolore ipsum et a uno deo" />
+        <TextField placeholder="Dolore ipsum et a uno deo" disabled />
       </div>
     </Layout>
   )

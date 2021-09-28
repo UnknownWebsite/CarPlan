@@ -34,21 +34,23 @@ function TextField(props: Props) {
     }, [text]);
 
     function onChange(e: React.FormEvent<HTMLInputElement>) {
-        if (props.validate) {
-            const valid = props.validate(e.currentTarget.value)
-            if (valid) {
+        if (!props.disabled) {
+            if (props.validate) {
+                const valid = props.validate(e.currentTarget.value)
+                if (valid) {
+                    setText(e.currentTarget.value);
+                    if (props.onChange)
+                        props.onChange(e.currentTarget.value);
+                }
+                else {
+                    setText(text);
+                }
+            }
+            else {
                 setText(e.currentTarget.value);
                 if (props.onChange)
                     props.onChange(e.currentTarget.value);
             }
-            else {
-                setText(text);
-            }
-        }
-        else {
-            setText(e.currentTarget.value);
-            if (props.onChange)
-                props.onChange(e.currentTarget.value);
         }
 
     }
@@ -56,7 +58,7 @@ function TextField(props: Props) {
     return (
         <div className={styles.text}>
             <span className={styles.hidden} ref={span}>{text.trim() == "" ? props.placeholder : text}</span>
-            <input className={(props.disabled ? styles.disabled : styles.enabled)} style={{ width }} type="text" onChange={onChange} value={text} placeholder={props.placeholder} />
+            <input className={(props.disabled ? styles.disabled : styles.enabled)} style={{ width }} disabled={props.disabled} type="text" onChange={onChange} value={text} placeholder={props.placeholder} />
         </div>
     )
 }
