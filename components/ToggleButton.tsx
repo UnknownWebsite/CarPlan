@@ -3,19 +3,22 @@ import styles from '../styles/ToggleButton.module.css';
 
 export interface Props {
     /**The start state of the button*/
-    startState: boolean;
+    startState?: boolean;
 
     /**Weather the button is disabled*/
-    disabled: boolean;
+    disabled?: boolean;
 
     /**Weather the button should be round */
-    round: boolean;
+    round?: boolean;
 
     /**Callback for when the button is switched off */
-    onChangeToInactive: () => void;
+    onChangeToInactive?: () => void;
 
     /**Callback for when the button is switched on */
-    onChangeToActive: () => void;
+    onChangeToActive?: () => void;
+
+    /**Callback for when the button is switched */
+    onChange?: (state: boolean) => void;
 }
 
 function ToggleButton(props: Props) {
@@ -25,10 +28,14 @@ function ToggleButton(props: Props) {
         if (!props.disabled) {
             setActive(!isActive);
             if (isActive) {
-                props.onChangeToActive();
+                if (props.onChangeToActive != null)
+                    props.onChangeToActive();
             } else {
-                props.onChangeToInactive();
+                if (props.onChangeToInactive != null)
+                    props.onChangeToInactive();
             }
+            if (props.onChange != null)
+                props.onChange(isActive);
         }
     }
 

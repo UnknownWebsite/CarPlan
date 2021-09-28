@@ -6,13 +6,12 @@ export interface Props {
     children: React.ReactNode;
 
     /**Weather light or dark mod should be enabled */
-    darkMode: boolean;
+    darkMode?: boolean;
 }
 
 function Layout(props: Props) {
 
     const style = props.darkMode ? darkTheme : lightTheme;
-    console.log(style);
 
     return (
         <div className="page-layout">
