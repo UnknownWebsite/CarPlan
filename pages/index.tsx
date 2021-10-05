@@ -4,14 +4,22 @@ import styles from '../styles/Home.module.css'
 import Layout from '../components/layout'
 import TextField from '../components/TextField'
 
+import { useState } from 'react'
+import Label from '../components/label'
+
 const Home: NextPage = () => {
 
+  const [darkMode, setDarkMode] = useState(false);
+
+
   return (
-    <Layout>
+    <Layout darkMode={darkMode}>
       <div>
         <p className={styles.test}>Test </p>
-        <ToggleButton round onChangeToActive={() => console.log("On")} onChangeToInactive={() => console.log("off")} />
-        <TextField placeholder="Dolore ipsum et a uno deo" disabled />
+        <ToggleButton round onChange={(state) => setDarkMode(!state)} />
+        <TextField placeholder="Dolore ipsum et a uno deo" />
+        <Label text="Hello World" />
+
       </div>
     </Layout>
   )

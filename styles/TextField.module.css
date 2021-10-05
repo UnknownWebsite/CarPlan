@@ -1,4 +1,3 @@
-/*TODO border*/
 .enabled {
     position: absolute;
     color: var(--main-text-color);
@@ -10,7 +9,7 @@
     background-color: var(--main-bg-color);
     display: inline-block;
     min-width: 50px;
-    pointer-events: auto;
+    height: 1rem;
 }
 
 .enabled:hover {
@@ -28,6 +27,11 @@
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
+}
+
+.spacer {
+    opacity: 0;
+    height: 1rem;
 }
 
 .hidden {
@@ -53,7 +57,7 @@
     position: absolute;
     color: var(--main-text-color);
     border-style: solid;
-    border-color: var(--main-disabled-color);
+    border-color: 0px;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;

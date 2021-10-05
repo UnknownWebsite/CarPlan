@@ -26,9 +26,7 @@ function TextField(props: Props) {
     const span = useRef<HTMLSpanElement>(null);
 
     useEffect(() => {
-        console.log("Here");
         if (span != null && span.current != null) {
-            console.log(span.current.offsetWidth);
             setWidth(span.current.offsetWidth);
         }
     }, [text]);
@@ -56,9 +54,12 @@ function TextField(props: Props) {
     }
 
     return (
-        <div className={styles.text}>
-            <span className={styles.hidden} ref={span}>{text.trim() == "" ? props.placeholder : text}</span>
-            <input className={(props.disabled ? styles.disabled : styles.enabled)} style={{ width }} disabled={props.disabled} type="text" onChange={onChange} value={text} placeholder={props.placeholder} />
+        <div>
+            <div className={styles.text}>
+                <input className={(props.disabled ? styles.disabled : styles.enabled)} style={{ width }} disabled={props.disabled} type="text" onChange={onChange} value={text} placeholder={props.placeholder} />
+                <span className={styles.hidden} ref={span}>{text.trim() == "" ? props.placeholder : text}</span>
+            </div>
+            <div className={styles.spacer} style={{ width }}></div>
         </div>
     )
 }

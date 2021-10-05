@@ -2,7 +2,8 @@
   /*Colors for the light mode*/
   --light-bg-color: #f5f6fa;
   --light-menu-color: #2f3640;
-  --light-text-color: #00a8ff;
+  --light-menu-text-color: #00a8ff;
+  --light-text-color: #2f3640;
   --light-error-color: #e84118;
   --light-highlight-color: #353b48;
   --light-disabled-color: #92969b;
@@ -11,6 +12,7 @@
   /*Colors for the dark mode*/
   --dark-bg-color: #353b48;
   --dark-menu-color: #40739e;
+  --dark-menu-text-color: #f5f6fa;
   --dark-text-color: #f5f6fa;
   --dark-error-color: #c23616;
   --dark-highlight-color: #487eb0;
@@ -20,6 +22,7 @@
   /*Colors currently in use*/
   --main-bg-color: var(--light-bg-color);
   --main-menu-color: var(--light-menu-color);
+  --main-menu-text-color: var(--light-menu-text-color);
   --main-text-color: var(--light-text-color);
   --main-error-color: var(--light-error-color);
   --main-highlight-color: var(--light-highlight-color);

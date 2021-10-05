@@ -1,0 +1,7 @@
+.disabled {
+    color: var(--main-disabled-color);
+}
+
+.enabled {
+    color: var(--main-text-color);
+}
