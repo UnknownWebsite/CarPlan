@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         <Scaffold>
           <ScaffoldElement label="Dark Mode"><ToggleButton round onChange={(state) => setDarkMode(!state)} /></ScaffoldElement>
           <ScaffoldCollapse label="Test">
-
+            <Label text="Nope"/>
           </ScaffoldCollapse>
         </Scaffold>
 

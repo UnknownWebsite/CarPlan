@@ -2,7 +2,7 @@
     border: solid black;
     border-width: 0 3px 3px 0;
     padding: 3px;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
 .inline {
@@ -26,5 +26,4 @@
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
-    transition: 0.1s;
 }

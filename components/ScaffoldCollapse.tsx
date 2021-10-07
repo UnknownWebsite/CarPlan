@@ -24,7 +24,7 @@ function ScaffoldCollapse(props: Props) {
                 <i className={styles.arrow + " " + (closed ? styles.right : styles.down) + " " + styles.inline}></i>
                 <div className={styles.inline}><Label text={props.label} /> </div>
             </div>
-
+            {!closed ? props.children : ""}
         </div >
     )
 }
